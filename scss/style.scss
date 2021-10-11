@@ -5,34 +5,29 @@ body {
   overflow-x: hidden;
 }
 
-/*===================MENU==========================*/
+/*===================EMCABEZADO==========================*/
 
-#menu a, button {
+#menu {
+  a{
   font-size: 18px !important;
   font-weight: 600;
-}
-
-#menu a {
   color: #3f3f3f;
+  }
+}
+#menu a:hover{
+  color: #eb344f;
 }
 
-/*===================SLIDER DE IMAGENES==========================*/
+/*===================CAROUSEL==========================*/
 
 .carousel-inner {
   max-height: 39rem !important;
 }
 
-/*===================SECCION NUESTRO EQUIPO IMAGEN==========================*/
 
-#img-equipo {
-  max-height: 30rem !important;
-  width: 80%;
-}
-
-/*===================SECCION NUESTRO EQUIPO MAPA==========================*/
+/*===================SECCION MAPA==========================*/
 
 #local {
-  margin-top: 50px;
   background: radial-gradient(circle, rgba(236, 93, 240, 0.2889530812) 53%, rgba(255, 255, 255, 0.3337710084) 100%);
   display: flex;
   justify-content: center;
@@ -114,12 +109,18 @@ footer {
     color: #383b39;
     text-align: center;
   }
+  
 }
-
+footer p:hover{
+  color: #eb344f;
+}
 #iconos i {
   font-size: 26px;
   padding: 0 8px;
   color: #32353b;
+} 
+#iconos a i:hover{
+  color: #eb344f;
 }
 
 /*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
@@ -128,10 +129,6 @@ footer {
   #intro, #equipo {
     width: 90% !important;
     margin: auto;
-  }
-
-  #local {
-    padding-top: 30px;
   }
 
   .wrapper-local {
@@ -196,26 +193,26 @@ footer {
   background: radial-gradient(circle, rgba(236, 93, 240, 0.2889530812) 53%, rgba(255, 255, 255, 0.3337710084) 100%);
 }
 
-.scss {
-  h3 {
-    color: #eb344f;
-    padding: 30px;
-  }
+//--VARIABLE---//
+$purple: #eb344f;
+$espacio: 30px;
 
-  h2 {
-    color: #eb344f;
-  }
+.scss{
+    h3{
+        color: $purple;
+        padding: $espacio;
+    }
+    h2{
+        color: $purple;
+        padding: $espacio;
+    }
 }
 
+   
 .parrafo-lactancia {
   padding: 50px;
 }
 
-.imgTrans:hover {
-  padding: 30px 30px;
-  transition-property: all;
-  transition-duration: 0.5s;
-  transition-timing-function: linear;
-}
+
 
 
